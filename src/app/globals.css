@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: capsbold;
+    /* src: url(../app/fonts/BPG-2017-DejaVu-Sans-Caps\ \(1\).ttf); */
+    /* src: url(../app/fonts/bpg-glaho-web-caps-webfont.ttf); */
+    /* src: url(../app/fonts/BPG-2017-DejaVuSans\ \(1\).ttf); */
+    /* src: url(../app/fonts/HelveticaNeueLTGEO-55Roman.ttf); */
+    src: url(../app/fonts/HelveticaNeueLTGEO-75Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: notcaps;
+    /* src: url(../app/fonts/BPG-2017-DejaVu-Sans-Caps\ \(1\).ttf); */
+    /* src: url(../app/fonts/bpg-glaho-web-caps-webfont.ttf); */
+    src: url(../app/fonts/BPG-2017-DejaVuSans\ \(1\).ttf);
+    /* src: url(../app/fonts/HelveticaNeueLTGEO-55Roman.ttf); */
+    /* src: url(../app/fonts/HelveticaNeueLTGEO-75Bold.ttf); */
+  }
+
+  @font-face {
+    font-family: notcapsbold;
+    /* src: url(../app/fonts/BPG-2017-DejaVu-Sans-Caps\ \(1\).ttf); */
+    /* src: url(../app/fonts/bpg-glaho-web-caps-webfont.ttf); */
+    /* src: url(../app/fonts/BPG-2017-DejaVuSans\ \(1\).ttf); */
+    /* src: url(../app/fonts/HelveticaNeueLTGEO-55Roman.ttf); */
+    src: url(../app/fonts/HelveticaNeueLTGEO-75Bold.ttf);
+  }
+
+  @font-face {
+    font-family: dottedfont;
+    src: url(../app/fonts/mg-bitneon-webfont.ttf);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6, li {
+    font-family: capsbold;
+    text-transform: uppercase;
+    font-feature-settings: "case"
+  }
+
+  .notcapsbold {
+    font-family: notcapsbold;
+  }
+
+  .dottedfont{
+    font-family: dottedfont;
+  }
+
+  p,
+  a,
+  ::placeholder,
+  button,
+  legend,
+  label {
+    font-family: notcaps;
+  }
+
+/* .swiper-pagination-bullet-active {
+    background-color: white;
+}
+
+.swiper-pagination-bullet {
+    height: 3px;
+    width: 100px;
+    border-radius: 2px;
+    background-color: white;
+} */
+
+.showScrollVert::-webkit-scrollbar {
+  width: 5px;
+}
+.showScrollHor::-webkit-scrollbar {
+  height: 5px;
+}
+.notshowScrollVert::-webkit-scrollbar {
+  width: 0px;
+}
+.notShowScrollHor::-webkit-scrollbar {
+  height: 0px;
+}
+::-webkit-scrollbar-track { 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #010125; 
+  border-radius: 10px;
+}
