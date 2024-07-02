@@ -19,10 +19,12 @@ const config: Config = {
         'md': "769px", // სმარტფონისთვის
         'lg': "992px", // პლანშეტისთვის
         'xl': "1200px",
-        '2xl': "1540px"
+        '2xl': "1600px"
       },
       animation: {
-        'spin-slow': 'spin 40s linear infinite',
+        'spin-slow': 'spin 60s linear infinite',
+        'spin-slowest': 'spin 200s linear infinite',
+        'animation': 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
       },
     },
   },

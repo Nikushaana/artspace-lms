@@ -39,7 +39,7 @@
   h3,
   h4,
   h5,
-  h6, li {
+  h6 {
     font-family: capsbold;
     text-transform: uppercase;
     font-feature-settings: "case"

@@ -7,8 +7,8 @@ import { Swiper, SwiperSlide, SwiperClass } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import ScreenWidth from "../ScreenWidth";
-import React from 'react'
-import GraduatedCommentsCard from '../cards/GraduatedCommentsCard'
+import React from "react";
+import GraduatedCommentsCard from "../cards/GraduatedCommentsCard";
 
 export default function GraduatedComments() {
   let swiperRef = useRef<SwiperClass>(null!);
@@ -54,16 +54,15 @@ export default function GraduatedComments() {
   useEffect(() => {
     if (screenWidth) {
       if (screenWidth >= 1540) {
-        setSlidesPerView(3);
-      } else if (screenWidth <= 1540 && screenWidth >= 1000) {
         setSlidesPerView(2);
       } else {
         setSlidesPerView(1);
       }
     }
   }, [screenWidth]);
+  
   return (
-    <div className='flex flex-col gap-y-[30px]'>
+    <div className="flex flex-col gap-y-[30px]">
       <h1 className="text-[25px]">რას ამბობენ ჩვენი კურსდამთავრებულები</h1>
       <div className="flex w-full justify-center">
         <Swiper
@@ -82,11 +81,11 @@ export default function GraduatedComments() {
         >
           {data?.map((item: any) => (
             <SwiperSlide key={item.id}>
-              <GraduatedCommentsCard/>
+              <GraduatedCommentsCard />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
     </div>
-  )
+  );
 }

@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex flex-col pb-[150px]">
-      <div className="pt-[130px] px-[12%] pb-[50px] max-xl:px-[8%] max-md:px-[16px] relative">
+      <div className="pt-[130px] pb-[50px] relative">
         <div className="absolute z-0 w-full h-full top-0 left-0">
           <Image
             src="/images/bgphoto.png"
@@ -24,12 +24,14 @@ export default function Home() {
         </div>
         <FirstBanner />
       </div>
-      <div className="pt-[50px] flex flex-col gap-y-[100px] max-sm:gap-y-[50px] px-[12%] max-xl:px-[8%] max-md:px-[16px]">
-        <PopularCourses />
-        <WhyUs />
-        <GraduatedComments />
-        <Faq />
-        <PartnerSlider />
+      <div className="flex justify-center">
+        <div className="w-full max-w-[1540px] pt-[50px] flex flex-col gap-y-[100px] max-sm:gap-y-[50px] px-[12%] max-xl:px-[8%] max-md:px-[16px]">
+          <PopularCourses />
+          <WhyUs />
+          <GraduatedComments />
+          <Faq />
+          <PartnerSlider />
+        </div>
       </div>
     </div>
   );

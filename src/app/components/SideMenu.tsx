@@ -36,7 +36,7 @@ export default function SideMenu() {
             setOpenMenuPopUp(false);
           }}
         >
-          <li className="cursor-pointer">კურსები</li>
+          <h1 className="cursor-pointer">კურსები</h1>
         </Link>
         <Link
           href={"/about-us"}
@@ -44,7 +44,7 @@ export default function SideMenu() {
             setOpenMenuPopUp(false);
           }}
         >
-          <li className="cursor-pointer">ჩვენ შესახებ</li>
+          <h1 className="cursor-pointer">ჩვენ შესახებ</h1>
         </Link>
         <Link
           href={"/business"}
@@ -52,7 +52,7 @@ export default function SideMenu() {
             setOpenMenuPopUp(false);
           }}
         >
-          <li className="cursor-pointer">ბიზნესისთვის</li>
+          <h1 className="cursor-pointer">ბიზნესისთვის</h1>
         </Link>
         <Link
           href={"/contact"}
@@ -60,7 +60,7 @@ export default function SideMenu() {
             setOpenMenuPopUp(false);
           }}
         >
-          <li className="cursor-pointer">კონტაქტი</li>
+          <h1 className="cursor-pointer">კონტაქტი</h1>
         </Link>
       </ul>
     </div>
